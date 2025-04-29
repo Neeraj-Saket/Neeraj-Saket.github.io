@@ -3,132 +3,252 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NEERAJ SAKET</title>
-    
+    <title>NEERAJ SAKET - CV</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA:wght@100..400&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Playwrite+AU+SA:wght@100..400&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+        :root {
+            --primary-fg: #e7c6ff;
+            --secondary-fg: #b8c0ff;
+            --primary-bg: #1e2749;
+            --secondary-bg: #1b2845;
+            --accent-color: #a29bfe;
+        }
 
+        body{
+            font-family: 'Merriweather', serif;
+            background-color: var(--primary-bg);
+            color: var(--secondary-fg);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 20px;
+        }
 
-:root {
+        .container {
+            background-color: var(--secondary-bg);
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            padding: 40px;
+            width: 80%;
+            max-width: 960px;
+        }
 
-    --primary-fg: #e7c6ff;
-    --secondary-fg: #b8c0ff;
-    --primary-bg: #1e2749;
-    --secondary-bg: #1b2845;
-}
+        h1 {
+            color: var(--primary-fg);
+            font-family: "Playwrite AU SA", cursive;
+            font-size: 2.5em;
+            font-weight: 700;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 10px;
+            letter-spacing: 2px;
+        }
 
-body{
-    height: 100vh;
-    width: 100vw;
-    
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    
-/*  background-color: rgb(25, 181, 74);
-     background: linear-gradient(to right bottom, rgb(14, 224, 7), rgb(15, 55, 28), rgb(205, 8, 143), rgb(91, 198, 9)); 
-     background: linear-gradient(135deg, #0e66e2, #9b5de5); 
-     background: linear-gradient(135deg, #16dd0b, #928dab);     
-     background: linear-gradient(135deg, #20f009, #302b63, #24243e); 
-    background: linear-gradient(135deg, #2dc21c, #2e2d2d, #1a1a1a, #2c1313);
-     background: linear-gradient(135deg, #41d12e, #410117, #bce615, #4b0313); */
-     background-color: var(--primary-bg);
+        h2 {
+            color: var(--accent-color);
+            font-size: 1.8em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 5px;
+        }
 
-}
+        h3 {
+            color: var(--primary-fg);
+            font-family: "Playwrite AU SA", cursive;
+            font-size: 1.4em;
+            font-weight: 400;
+            text-transform: capitalize;
+            text-align: center;
+            margin-bottom: 20px;
+        }
 
-div{
-    width: 100%;
-    height: 100%;
-}
+        p {
+            line-height: 1.6;
+            margin-bottom: 15px;
+        }
 
-h1{
-    color: var(--primary-fg);
-    font-family: "Playwrite AU SA", cursive;
-    font-size: xx-large;
-    font-weight: 900;
-    text-transform: capitalize;
-    text-align: center;
-    letter-spacing: 3px;
-    word-spacing: 10px;
-    text-shadow: 5px 5px 10px rgb(220, 211, 224);
-    
-}
+        .section {
+            margin-bottom: 30px;
+        }
 
-h3{
-    color: rgb(255, 255, 255);
-    font-family: "Playwrite AU SA", cursive;
-    font-size: large;
-    font-weight: 400;
-    text-transform: capitalize;
-    text-align: center;
-    text-shadow: 5px 5px 10px rgb(222, 231, 228);
+        ul {
+            list-style-type: disc;
+            padding-left: 20px;
+            margin-bottom: 15px;
+        }
 
-}
+        li {
+            line-height: 1.5;
+        }
 
-p{
-    width: 85vw;
-    color: var(--secondary-fg);
-    font-family: "Merriweather", serif;
-    font-size: large;
-    font-weight: 400;
-    text-align: center;
-    text-transform: capitalize;
-    text-align: center;
-}
+        .button {
+            display: block;
+            width: 200px;
+            padding: 15px 20px;
+            background-color: var(--accent-color);
+            color: var(--primary-bg);
+            font-family: "Playwrite AU SA", cursive;
+            font-size: 1.1em;
+            font-weight: 700;
+            text-transform: uppercase;
+            border: none;
+            border-radius: 25px;
+            text-align: center;
+            text-decoration: none;
+            margin: 30px auto 10px; /* Added some bottom margin */
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
 
-button{
-    width: 200px;
-    height: 60px;
-     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-family: "Playwrite AU SA", cursive;
-    font-size: large;
-    font-weight: 900;
-    text-transform: capitalize;
-    border: 1px;
-    box-shadow: 10px, 10px, 10px, red;
-    border-radius: 20px;
+        .button:hover {
+            background-color: #8e44ad;
+        }
 
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            list-style: none;
+            padding-left: 0;
+        }
 
-}
+        .skills-list li {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--secondary-fg);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
 
-button:hover{
-    color: rgb(148, 8, 195);
-    background-color: rgb(214, 236, 16);
-    
-    
-}
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 20px;
+            border-left: 2px solid var(--accent-color);
+        }
 
+        .experience-item h4 {
+            color: var(--primary-fg);
+            margin-bottom: 5px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+
+        .experience-item p {
+            font-size: 0.95em;
+            margin-bottom: 10px;
+        }
+
+        .traits-list {
+            list-style: none;
+            padding-left: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .traits-list li {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--secondary-fg);
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
     </style>
 </head>
 <body>
-    <h1>NEERAJ SAKET</h1>
-    <h3>I'm a fulll stack developer Intern and AI enthusiast!</h3><br>
-    <p>Hello!
-        Good Morning! 
-        I'm <b>NEERAJ SAKET</b> From mp and pursuing my btech from <b>SAMRAT ASHOK TECHNOLOGICAL INSTITUTE VIDISHA </b>with   
-        specialization of <b>Artificial intelligence and Data Science</b>
-       <br>In my internship(s) with <b>MPFITT</b> which was for a total duration of 2 Month(s) in total. During this time, I contributed to the House price Prediction. Coming to my project work(s) 2 Month(s) in total, I worked on quite interesting topics like Rainfall prediction. I would also like to tell you that I have done 2 Month(s) Artificial intelligence builder. <br>
-       These exposures, combined with several other opportunities, helped me learn methods of communicating effectually in large groups/teams, as well as taught me to contribute productively to a common goal or purpose.I would also like to add that I am skilled in Python, Data Science, Data Visualization, Statical Analysis, Artificial Intelligence With Python, C and DSA With Python. <br>
-       To add further, I am a quick learner and believe in learning from my past mistakes. Learning from the experiences of ones is a virtue that can take anyone ahead in their life and career. <br>
-       Thank you!
+    <div class="container">
+        <h1>NEERAJ SAKET</h1>
+        <h3>Full Stack Developer Intern & AI Enthusiast</h3>
 
+        <div class="section">
+            <h2>Profile Summary</h2>
+            <p>A highly motivated and quick-learning B.Tech student in Artificial Intelligence and Data Science at SAMRAT ASHOK TECHNOLOGICAL INSTITUTE, VIDISHA. Gained practical experience through an internship at MPFITT, contributing to a House Price Prediction project, and hands-on project work in Rainfall Prediction. Completed a 2-month AI Builder program, demonstrating a strong foundation in AI principles and development. Possesses excellent communication and teamwork skills developed through various collaborative projects. Proficient in Python, Data Science, and related tools, eager to contribute to innovative projects and further expand my knowledge in the field.</p>
+        </div>
 
+        <div class="section">
+            <h2>Education</h2>
+            <div class="education-item">
+                <h3>Bachelor of Technology (B.Tech)</h3>
+                <h4>Artificial Intelligence and Data Science</h4>
+                <p>SAMRAT ASHOK TECHNOLOGICAL INSTITUTE, VIDISHA</p>
+                <p>Expected Graduation: [Insert Expected Graduation Year]</p>
+            </div>
+        </div>
 
-        
+        <div class="section">
+            <h2>Internship Experience</h2>
+            <div class="experience-item">
+                <h4>Intern</h4>
+                <p>MPFITT</p>
+                <p>Duration: 2 Months</p>
+                <p>Contributed to the House Price Prediction project.</p>
+            </div>
+        </div>
 
+        <div class="section">
+            <h2>Projects</h2>
+            <div class="experience-item">
+                <h4>Rainfall Prediction Project</h4>
+                <p>Duration: 2 Months</p>
+                <p>Worked on developing a model for rainfall prediction.</p>
+            </div>
+            <div class="experience-item">
+                <h4>Artificial Intelligence Builder Program</h4>
+                <p>Duration: 2 Months</p>
+                <p>Completed a program focused on building AI fundamentals and practical applications.</p>
+            </div>
+        </div>
 
-    </p>
-    <button>view portfollio</button>
+        <div class="section">
+            <h2>Skills</h2>
+            <ul class="skills-list">
+                <li>Python</li>
+                <li>Data Science</li>
+                <li>Data Visualization</li>
+                <li>Statistical Analysis</li>
+                <li>Artificial Intelligence</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>C</li>
+                <li>DSA with Python</li>
+                <li>Jupyter Notebook</li>
+                <li>Pandas</li>
+                <li>NumPy</li>
+                <li>Matplotlib</li>
+                <li>Seaborn</li>
+                <li>Scikit-learn</li>
+                <li>TensorFlow</li>
+                <li>Keras</li>
+            </ul>
+        </div>
+
+        <div class="section">
+            <h2>Personal Traits</h2>
+            <ul class="traits-list">
+                <li>Quick Learner</li>
+                <li>Team Player</li>
+                <li>Effective Communicator</li>
+                <li>Problem Solver</li>
+                <li>Adaptable</li>
+                <li>Detail-Oriented</li>
+            </ul>
+        </div>
+
+     
+        <button class="button" onclick="window.print()">Get my CV</button>
+    </div>
 </body>
 </html>
